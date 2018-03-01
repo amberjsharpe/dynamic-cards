@@ -9,7 +9,7 @@ let createCard = () => {
     // Create a card with text
     let newCard = document.createElement("div");
     cardDisplay.appendChild(newCard); 
-    newCard.innerHTML = textInput.value;
+    newCard.innerHTML = textInput.value + `<button class=delete type=button>X</button></div>`;
     textInput.value = "";
     
     // Add a class to style in CSS
