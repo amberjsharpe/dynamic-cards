@@ -1,5 +1,70 @@
+body, html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    height: 100%;
+}
+
+/* Top of Page */
+#top-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    background-color: #FEF9FF;
+    border-bottom: 1px solid black;
+}
+
+#textInput {
+    width: 400px;
+    height: 35px;
+    font-size: 25px;
+    resize: none;
+}
+
+#createButton {
+    margin-top: 35px;
+    border-top: 1px solid #00100b;
+    background: #FE5F55;
+    border-radius: 17px;
+    padding: 12.5px 25px;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    color: white;
+    font-size: 24px;
+    font-family: Helvetica, Arial, Sans-Serif;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+/* Card Output Area */
+#displayArea {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px 50px;
+    background-color: #F7F7FF;
+    height: 100%;
+}
+
 .card {
+    background-color: #EF476F;
     border: 1px solid black;
-    height: 150px;
+    height: 175px;
     width: 150px;
+    margin: 15px 15px 15px 15px;
+    padding: 20px 7px;
+    position: relative;
+    overflow-wrap: break-word;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.delete {
+    width: 25px;
+    height: 25px;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    position: absolute;
+    top: 0;
+    text-align: center;
+    font-size: 23px;
+    right: 0;
 }
